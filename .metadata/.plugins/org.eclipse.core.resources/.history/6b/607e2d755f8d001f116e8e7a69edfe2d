@@ -1,0 +1,61 @@
+import java.io.*;
+import java.util.*;
+
+
+class FileOperation{
+	String fileName;
+	public void createFile() {
+		
+		
+	}
+	
+	public void Insert() {
+		
+	}
+	public void Display() {
+		
+	}
+}
+
+public class FileHandling {
+
+	public static void main(String[] args) {
+	
+		while(true) {
+			int ch;
+			Scanner sc=new Scanner(System.in);
+			System.out.println("1. Create a new file");
+			System.out.println("2. Insert into the file");
+			System.out.println("3.Display the content of the file");
+			System.out.println("Enter a Choice:");
+			ch=sc.nextInt();
+			FileOperation obj=new FileOperation();
+			
+			switch(ch) {
+			case 1:
+				obj.createFile();
+				break;
+			
+			case 2:
+				obj.Insert();
+				break;
+				
+			case 3:
+				obj.Display();
+				break;
+				
+			case 4:
+				System.exit(0);
+				sc.close();
+				
+			default:
+				System.out.println("Invalid Choice...!");
+			}
+			
+		}
+
+		
+
+	}
+
+}

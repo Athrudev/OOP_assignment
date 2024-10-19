@@ -1,0 +1,19 @@
+
+import java.io.*;
+public class InsertInFile {
+
+	public static void main(String[] args) {
+		try {
+			
+			File obj=new File("f1.txt");
+			if(obj.createNewFile()) {
+				System.out.println("File Created Successfully...!");
+			}else {
+				System.out.println("File Already Exist");
+			}
+		}catch(Exception e) {
+			System.out.println("EXception occured"+e);
+		}
+	}
+
+}

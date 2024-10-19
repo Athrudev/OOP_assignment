@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+
+class Demo{
+	public void createFile() {
+		
+	}
+	
+	public void Insert() {
+		
+	}
+	public void Dsiplay() {
+		
+	}
+}
+
+public class FileHandling {
+
+	public static void main(String[] args) {
+	
+		System.out.println("1. Create a new file");
+		System.out.println("2. Insert into the file");
+		System.out.println("3.Display the content of the file");
+		System.out.println("Enter a Choice:");
+
+	}
+
+}

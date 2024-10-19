@@ -1,0 +1,176 @@
+import java.util.*;
+
+public class Assignment7 {
+
+	public static void main(String[] args) {
+
+		int size,result;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter List Size");
+		size=sc.nextInt();
+
+		if(size<0)
+
+		{
+
+			System.out.println("Invalid Size");
+
+		}
+
+		else
+
+		{
+
+			List<Integer> list= new ArrayList(size);
+
+			List<Integer> even=new ArrayList();
+
+			List<Integer> odd=new ArrayList();
+
+			List<Integer> prime=new ArrayList();
+
+			List<Integer> palindrome=new ArrayList();
+
+	
+
+	
+
+			System.out.println("Enter "+size+" Elements by Clicking ENTER key");
+
+			for(int i=0;i<size;i++)
+
+			{
+
+				result=sc.nextInt();
+
+				if(result<0)
+
+				{
+
+					System.out.println("PLease Enter Positive Integer");
+
+				}
+
+				else
+
+				{
+
+				list.add(result);
+
+				}
+
+			}
+
+			
+
+			Iterator<Integer> iterator=list.listIterator();
+
+			while(iterator.hasNext())
+
+			{
+
+				int t=iterator.next();
+
+				
+
+					if(t%2==0)
+
+					{
+
+						even.add(t);
+
+					}
+
+					else
+
+					{
+
+						odd.add(t);
+
+					}
+
+					
+
+					 for(int j=2;j<t;j++)
+
+					 {
+
+					    if(t%2==0)
+
+					    {
+
+					    	break;
+
+					    }
+
+					    else
+
+					    {
+
+					    	prime.add(t);
+
+					    	break;
+
+					  }
+
+					
+
+					 }	
+
+					 	int temp=t;
+
+					     int rem=0;
+
+					     int rev=0;
+
+					     while(temp>0){
+
+					    
+
+					     rem=temp%10;
+
+					     rev=rev*10+rem;
+
+					     temp=temp/10;
+
+					     }
+
+					     if (rev==t)
+
+					     {
+
+								palindrome.add(t);
+
+					    
+
+					     }
+
+					 
+
+	
+
+			}
+
+			System.out.println(" Given List is:\n"+list);
+
+			System.out.println("\nEven Nos:\n"+even);
+
+			System.out.println("\nOdd No:\n"+odd);
+
+			System.out.println("\nPrime No:\n"+prime);
+
+			System.out.println("\nPalindrome No:\n"+palindrome);
+
+	
+
+		}		
+
+			
+
+		
+
+	}
+
+
+
+	}
