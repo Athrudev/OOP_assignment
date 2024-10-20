@@ -183,6 +183,8 @@ class Database{
 				if(info.startsWith(id)) {
 					System.out.println("Record Founded...!");
 					System.out.println(info);
+				}else {
+					System.out.println("Record not found");
 				}
 			}
 		}catch(Exception e) {
