@@ -192,22 +192,6 @@ class Database{
 }
 
 
-class Student{
-String Student_id,name,Class,address;
-int marks,rollno;
-
-Student(String Stduent_id,String name,int rollno,String Class,String adderss,int marks){
-	this.Student_id=Student_id;
-	this.name=name;
-	this.rollno=rollno;
-	this.Class=Class;
-	this.address=adderss;
-	this.marks=marks;
-}
-
-
-
-}
 
 public class Assignment8 {
 
@@ -215,7 +199,7 @@ public class Assignment8 {
 		
 		Scanner sc=new Scanner(System.in);
 		//File file=new File(FILE_NAME);
-		Database d=new Database();
+		Database d=new Database(); //created database class object for the DB operation
 		int ch;
 		
 		while(true) {
