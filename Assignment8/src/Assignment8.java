@@ -1,7 +1,6 @@
 import java.io.*;
 import java.util.*;
 
-
 class Database{
 	Scanner sc=new Scanner(System.in);
 	public final String FILE_NAME="database.txt";
@@ -81,7 +80,7 @@ class Database{
                 String line = reader.nextLine();
                 if (line.startsWith(id + ",")) {
                     found = true;
-                    System.out.println("Deleting record: " + line);
+                    System.out.println("Deleting record: " + id);
                 } else {
                     list.add(line);
                 }
@@ -103,10 +102,6 @@ class Database{
             e.printStackTrace();
         }
     }
-	
-	
-	
-	
 	
 	
 	public void UpdateRecord() {
@@ -142,7 +137,7 @@ class Database{
 			if(found) {
 				FileWriter w=new FileWriter(FILE_NAME);
 				for(String record:list) {
-					System.out.println(record);
+					//System.out.println(record);
 					w.write(record+"\n");
 				}
 				w.close();
