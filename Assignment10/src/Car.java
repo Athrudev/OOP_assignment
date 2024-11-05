@@ -16,6 +16,21 @@ public interface Car {
 
 		public String getEngine();
 		
+		
+		public String getColour();
+		 
+		public void setColour(String colour);
+		 
+		public String getVariant();
+		 
+		public void setVariant(String variant);
+		 
+		public String getFuel();
+		 
+		public void setFuel(String fuel);
+		 
+		public String getdata();
+		 
+		
 	   
 	}
-
