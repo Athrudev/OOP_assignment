@@ -34,5 +34,3 @@
 			paymentMethod.pay(amount);
 		}
 	}
-
-
