@@ -26,11 +26,10 @@ class GenericArrayList<T> {
 class five {
     public static void main(String[] args) {
         GenericArrayList<String> stringList = new GenericArrayList<>();
-        stringList.addItem("Hello");
-        stringList.addItem("World");
+        stringList.addItem("OOP");
+        stringList.addItem("Java");
         stringList.displayItems();
 
-        // Attempting to access an index that does not exist
         System.out.println("Item at index 5: " + stringList.getItem(5));
     }
 }
