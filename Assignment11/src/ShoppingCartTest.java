@@ -13,8 +13,6 @@ public class ShoppingCartTest {
 		cart.addItem(item1);
 		cart.addItem(item2);
 		
-		//pay by paypal
-		
 		
 		//add switch-case for choice
 		System.out.println("\nPlease enter choice of Payment");
